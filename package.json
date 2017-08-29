@@ -1,0 +1,19 @@
+{
+  "name": "js-starter-kit",
+  "version": "1.0.0",
+  "description": "To build a customized starter kit for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node buildScript/srcServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Sara Bahrani",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "bs-html-injector": "^3.0.3"
+  }
+}
