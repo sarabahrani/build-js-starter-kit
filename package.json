@@ -4,7 +4,9 @@
   "description": "To build a customized starter kit for JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "node buildScript/srcServer.js",
+    "prestart": "node buildScript/startMessage.js",
+    "start": "node buildScript/srcServer.js ",
+    "lt": "node localtunnel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,6 +16,9 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.18.13",
-    "bs-html-injector": "^3.0.3"
+    "bs-html-injector": "^3.0.3",
+    "chalk": "^2.1.0",
+    "localtunnel": "^1.8.3",
+    "npm-run-all": "^4.1.1"
   }
 }
