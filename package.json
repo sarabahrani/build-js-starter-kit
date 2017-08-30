@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prestart": "node buildScript/startMessage.js",
-    "start": "node buildScript/srcServer.js ",
-    "lt": "node localtunnel",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all --parallel  open:src ",
+    "open:src":"node buildScript/srcServer.js",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 3000 --subdomain sara",
+    "share": "npm-run-all --parallel  open:src localtunnel "
   },
   "repository": {
     "type": "git"
@@ -19,6 +21,7 @@
     "bs-html-injector": "^3.0.3",
     "chalk": "^2.1.0",
     "localtunnel": "^1.8.3",
-    "npm-run-all": "^4.1.1"
+    "npm-run-all": "^4.1.1",
+    "nsp": "^2.7.0"
   }
 }
