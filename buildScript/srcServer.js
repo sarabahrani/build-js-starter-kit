@@ -1,7 +1,7 @@
 import browserSync from'browser-sync';
 import webpack from 'webPack';
 import webpackConfig from '../webpack.config.dev';
-import webpackDevMiddleware  from 'webpack-dev-middleware'
+import webpackDevMiddleware  from 'webpack-dev-middleware';
 let bundler = webpack(webpackConfig);
 browserSync.init({
     server: 'src',
