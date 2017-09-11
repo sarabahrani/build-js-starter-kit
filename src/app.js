@@ -1,1 +1,3 @@
-alert("Hello world!");
+export default function sum (a,b){
+return a+b;
+}
