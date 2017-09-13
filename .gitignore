@@ -42,4 +42,4 @@ dist
 #.yml
 *.yml
 
-
+src/api/db.json

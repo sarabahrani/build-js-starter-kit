@@ -1,0 +1,32 @@
+/* defining :
+ - var as @a: 
+        - @a=@a+10%
+        - color :black
+        -different units: px , em
+        - string : arial without ""
+        -complex: 1px #000 solid 0 0 
+- calculation: 
+    during calculation use color as their rgb number
+        -font-size: 4px+4;
+        -color: #ffff/4  || lighten( @a,10%)
+        -width : (100%/2)+25%
+        -math: @a : round(3.14);
+ -import other files @import a.css
+ - nested properies : h1 { p:{}}
+ - Mixins : .abc(@x){ background-color: @x}
+                -h1{ .abc(4)}
+            Using type guards: .color(@color) when (alpha(@color))>10%){color: black}
+                    -h1 { .color (#fff) } 
+ */
+@main-color:red;
+.table{
+    background-color: papayawhip !important;
+}
+.thead-inverse th{
+    color: @main-color !important;
+}
+#user{
+    td {
+        color: purple;
+    }
+}
